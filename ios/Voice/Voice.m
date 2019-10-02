@@ -138,6 +138,7 @@
     }
     
     self.speechRecognizer.delegate = self;
+    self.speechRecognizer.defaultTaskHint = SFSpeechRecognitionTaskHintDictation;
     
     // Start audio session...
     if (![self setupAudioSession]) {
